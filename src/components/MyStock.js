@@ -1,9 +1,9 @@
 import React from "react";
 
-function Stock({stock: {id, ticker, name, type, price}, buyStock}) {
+function MyStock({stock: {id, ticker, name, type, price}, sellStock}) {
   
   const handleClick = () => {
-    buyStock(id)
+    sellStock(id)
   }
 
   return (
@@ -18,4 +18,4 @@ function Stock({stock: {id, ticker, name, type, price}, buyStock}) {
     </div>
   );
 }
-export default Stock;
+export default MyStock;
